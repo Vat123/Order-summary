@@ -1,0 +1,188 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+    /* building the card and devide it to sections */
+
+
+.Container{
+    margin: 30px auto;
+    width: 450px;
+    height: 610px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 17px 17px 17px 17px;
+}
+/* ----------------------- */
+
+/* the main body of the card */
+.Card{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* ------------------------------ */
+
+
+/* the top section of the card where the photo will be */
+
+#Pic{
+    width: 450px;
+    height: 220px;
+    background-image: url("images/illustration-hero.svg");
+    background-repeat: no-repeat;
+    border-radius: 17px 17px 0px 0px;
+    
+}
+/* the text uunderneath the photo  */
+#Pic-Text{
+    padding: 15px 65px;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+}
+/* ------------------------ */
+
+/* the music section and the body of it */
+#shape{
+    height: 80px;
+    width: 320px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* the small photo of the image of the song */
+.shape_img{
+    display: inline-block;
+    background-image: url("images/icon-music.svg");
+    height: 48px;
+    width: 48px;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+}
+/* the container of name and the price of the song next to the small photo */
+.text-container{
+    display: grid;
+    margin-right: 57px;
+    line-height: 1.6;
+}
+
+/* the song name */
+#title_text{
+    font-weight: 700;
+}
+
+/* just to set the position of the price */
+.colored_text{
+    margin: 11px 0px;
+}
+
+#Changing_button{
+    font-weight: 700;
+}
+#Changing_button , a{
+    background-color: transparent;
+}
+/* to set the position of the name price and the change word on the same line  */
+.text-container p ,.link-container p{
+    margin: 0;
+    display: inline-block;
+}
+/* to delete and decorattion or borders of the three buttons */
+#Buy_button , #Changing_button , #Canceling_button{
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+/* makeing the payment (buy)  */
+#Buy_button{
+    
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 3;
+    border-radius: 3px;
+    margin-top: 24px;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0 29px 25px -9px hsl(265deg 50% 38% / 32%);
+}
+/* setting the width and the shape of the lastt two buttons */
+#Canceling_button , #Buy_button{
+    width: 320px;
+    height: 3rem;
+    font-size: 16px;
+}
+
+#Canceling_button{
+    color: black;
+    background-color: transparent;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.colored_text , #Canceling_button{
+    color: hsl(224, 23%, 55%);
+}
+
+
+
+/* hover section to chhange the colors and the cursor when hovering on a button */
+#Changing_button, a:hover{
+    text-decoration: none;
+    color: #766cf1;
+}
+
+
+#Buy_button:hover{
+    background-color: #766cf1;
+}
+
+#Canceling_button:hover{
+    color: black;
+    font-weight: 700;
+}
+/* ------------------------------------------- */
+
+
+
+/* the links section of the frontend website and my profile */
+
+.links_div{
+    text-align: center;
+
+}
+.links{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+/* ---------------------- */
+
+/* phone section */
+
+@media screen and (max-width:590px) {
+    .Container{
+        width: 356px;
+    }
+
+    #Pic{
+        width: 356px;
+    }
+    #Pic-Text{
+        padding: 15px 44px;
+    }
+}
+/* ----------------------------- */
